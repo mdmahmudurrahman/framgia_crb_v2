@@ -91,6 +91,9 @@ group :test do
   gem "simplecov-json"
   gem "shoulda-matchers"
   gem "rails-controller-testing"
+  gem "cucumber-rails", require: false
+  gem "selenium-webdriver"
+  gem "capybara"
 end
 
 group :staging, :production do

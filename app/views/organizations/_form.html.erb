@@ -40,7 +40,7 @@
     <div class="form-group row">
       <div class="col-md-6">
         <%= ff.label :timezone_name %>
-        <%= ff.time_zone_select :timezone_name, nil, {},
+        <%= ff.time_zone_select :timezone_name, nil, {id: "timezone-name"},
           {include_blank: true, class: "form-control timezone-select"} %>
       </div>
     </div>
@@ -49,7 +49,8 @@
       <div class="col-md-6">
         <%= ff.label :default_view, "Calendar default view" %>
         <%= ff.select(:default_view, ["calendar", "scheduler"], {},
-          {include_blank: false, class: "form-control calendar-default-view"}) %>
+          {include_blank: false, class: "form-control calendar-default-view",
+          id: "default-view"}) %>
       </div>
     </div>
 
